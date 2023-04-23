@@ -2,10 +2,10 @@
 <ellipse cx="18.1644" cy="18.5" rx="18.1644" ry="18.5" fill="#192122"/>
 <path d="M17.9774 36.8094C28.0093 36.8094 36.1417 28.5266 36.1417 18.3094C36.1417 12.5874 33.5911 7.47209 29.5846 4.07861L4.00482 30.1311C7.33673 34.2116 12.3592 36.8094 17.9774 36.8094Z" fill="#192122"/>
 <mask id="mask0_5_251" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="19" height="21">
-<path d="M9.78052 25.6152L23.277 29.2984L27.6166 12.8034L14.1202 9.12019L9.78052 25.6152Z" fill="url(#pattern0)"/>
+<path d="M9.78052 25.6152L23.277 29.2984L27.6166 12.8034L14.1202 9.1202L9.78052 25.6152Z" fill="url(#pattern0)"/>
 </mask>
 <g mask="url(#mask0_5_251)">
-<path d="M9.78052 25.6152L22.8027 29.169L27.1423 12.6739L14.1202 9.12019L9.78052 25.6152Z" fill="white"/>
+<path d="M9.78052 25.6152L22.8027 29.169L27.1423 12.6739L14.1202 9.1202L9.78052 25.6152Z" fill="white"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

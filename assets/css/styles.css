@@ -431,3 +431,123 @@ img {
     line-height: 1.5;
     color: #9da6a5;
 }
+
+/* ==================== stats ==================== */
+
+.stats {
+    background: #fff;
+    padding: 265px 0px;
+}
+
+.stats .content {
+    width: 862px;
+}
+
+.stats .content > .row {
+    justify-content: space-between;
+}
+
+.stats .col {
+    text-align: center;
+}
+
+.stats .title {
+    font-weight: 700;
+    font-size: 6.2rem;
+    color: #0d1111;
+}
+.stats .desc {
+    margin-top: 11px;
+    font-weight: 400;
+    font-size: 1.8;
+    color: #767e7e;
+}
+
+/* ==================== feedbacks ==================== */
+.feedback {
+    padding-bottom: 130px;
+}
+.feedback .content {
+    position: relative;
+}
+.feedback .detail {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    width: 419px;
+}
+
+.feedback .desc-1 {
+    margin-top: 27px;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: #5d6564;
+}
+.feedback .desc-2 {
+    margin-top: 33px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: #1f3042;
+}
+
+.feedback .desc-2 span {
+    font-weight: 500;
+    color: #070707;
+}
+
+.feedback .navbar {
+    margin-top: 52px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.feedback .navbar .cir-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #2ac9bf;
+}
+
+.feedback .avatar {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.feedback .avatar:nth-of-type(1) {
+    bottom: 145px;
+    left: 491px;
+}
+.feedback .avatar:nth-of-type(2) {
+    width: 92px;
+    height: 92px;
+    bottom: 389px;
+    left: 635px;
+}
+.feedback .avatar:nth-of-type(3) {
+    bottom: 0;
+    left: 703px;
+}
+.feedback .avatar:nth-of-type(4) {
+    width: 235px;
+    height: 235px;
+    bottom: 139px;
+    left: 764px;
+}
+.feedback .avatar:nth-of-type(5) {
+    width: 110px;
+    height: 110px;
+    bottom: 352px;
+    left: 1060px;
+}
+.feedback .avatar:nth-of-type(6) {
+    bottom: 29px;
+    left: 1060px;
+}
