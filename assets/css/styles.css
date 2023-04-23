@@ -37,6 +37,32 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    min-width: 186px;
+    border-radius: 14px;
+    padding: 20px 41px;
+}
+
+.btn:hover {
+    background: #def6f5;
+    opacity: 0.9;
+}
+
+.cir-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+
+.cir-btn:hover {
+    background: #def6f5;
+}
+img {
+    display: block;
+}
 /* ==================== header ==================== */
 .header {
     padding-top: 52px;
@@ -69,6 +95,9 @@ a {
     margin-left: auto;
 }
 
+.header .nav-sub .btn {
+    min-width: 48px;
+}
 .header .nav-sub .item {
     font-weight: 400;
     font-size: 1.6rem;
@@ -85,3 +114,320 @@ a {
 }
 
 /* ==================== hero ==================== */
+.hero {
+    padding-bottom: 79px;
+}
+.hero .row {
+    justify-content: space-between;
+}
+
+.hero .hero-detail {
+    width: 40%;
+}
+
+.hero .thumb {
+    position: relative;
+}
+.hero img {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+.hero .title-panel {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+.hero .panel:nth-of-type(1),
+.hero .panel:nth-of-type(2),
+.hero .panel:nth-of-type(3) {
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    background: #ffffff;
+    border-radius: 18px;
+}
+.hero .panel:nth-of-type(1) {
+    padding: 17px 35px;
+    bottom: 41px;
+    right: 45px;
+}
+
+.hero .panel:nth-of-type(1) .title-panel {
+    margin-bottom: 8px;
+}
+
+.hero .avatar-block {
+    display: flex;
+    align-items: center;
+}
+
+.hero .avatar-block .avt {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -7px;
+    background: #1ebfc1;
+    /* font */
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+.hero .panel:nth-of-type(2) {
+    padding: 16px 25px 23px;
+    bottom: 46px;
+    right: 517px;
+}
+
+.hero .panel:nth-of-type(2) .title-panel {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.hero .panel:nth-of-type(2) .image {
+    width: 74px;
+    height: 6px;
+}
+
+.hero .panel:nth-of-type(2) .image + .image {
+    margin-top: 12px;
+}
+.hero .panel:nth-of-type(3) {
+    padding: 18px 25px;
+    bottom: 407px;
+    right: 459px;
+}
+
+.hero .panel:nth-of-type(3) img {
+    width: 107px;
+    height: 40px;
+}
+.hero .desc-1 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+.hero .desc-2 {
+    width: 374px;
+    margin-top: 46px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #9da6a5;
+}
+.hero .title {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.16;
+    color: #0d1111;
+}
+
+.hero .btn {
+    min-width: 186px;
+    border-radius: 14px;
+    padding: 20px 41px;
+    background: #1ebfc1;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero .cir-btn img {
+    width: 14px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.hero .hero-detail > .row {
+    margin-top: 52px;
+    justify-content: flex-start;
+}
+
+.hero .hero-detail .cir-btn {
+    margin-left: 50px;
+}
+
+/* ==================== features ==================== */
+.features {
+    background: #ffffff;
+}
+.features .content-features {
+    margin-left: 135px;
+    width: 1024px;
+}
+.features .content-features div:first-child {
+    width: 591px;
+}
+.features .desc-1 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+.features .desc-2 {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+.features .title {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1.33;
+    color: #0d1111;
+}
+
+.features .row {
+    margin-top: 80px;
+    gap: 200px;
+    margin-bottom: 130px;
+}
+
+.features .row .sub-title {
+    margin-top: 26px;
+    margin-top: 26px;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.features .row .desc-3 {
+    margin-top: 16px;
+    margin-top: 26px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.69;
+    color: #9da6a5;
+}
+
+/* ==================== courses ==================== */
+.courses {
+    background: #ffffff;
+}
+.courses .content {
+    width: 1171px;
+}
+.courses .desc-1 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.courses .title {
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 6.3rem;
+    color: #0d1111;
+}
+
+.courses .desc-2 {
+    width: 525px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #767e7e;
+}
+.courses .link-block {
+    display: flex;
+    margin-top: 19px;
+    align-items: center;
+}
+.courses .link-block .link {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-decoration-line: underline;
+    color: #1ebfc1;
+}
+
+.courses .row-2 {
+    margin-top: 79px;
+    justify-content: space-between;
+    gap: 47px;
+}
+.courses .row-2 .slide {
+    height: 517px;
+    position: relative;
+    flex: 1;
+}
+.courses .row-2 .image {
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    opacity: 0.65;
+    border-radius: 8px;
+}
+
+.courses .row-2 .panel {
+    opacity: 1;
+    width: 325px;
+    position: absolute;
+    bottom: 0;
+    left: 17px;
+    background: #ffffff;
+    box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 18px 0px 29px 25px;
+}
+
+.courses .sub-title {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #0d1111;
+}
+.courses .desc-3 {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.courses .desc-3 span {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+.courses .desc-4 {
+    margin-top: 6px;
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #9da6a5;
+}
+
+.courses .footer-panel {
+    display: flex;
+    gap: 10px;
+}
+.courses .point {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1ebfc1;
+}
+
+.courses .desc-5 {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #9da6a5;
+}
