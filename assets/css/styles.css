@@ -33,7 +33,7 @@ body {
 }
 
 a {
-    display: inline-block;
+    display: block;
     text-decoration: none;
 }
 
@@ -270,6 +270,7 @@ img {
     width: 591px;
 }
 .features .desc-1 {
+    letter-spacing: 2.4px;
     font-weight: 700;
     font-size: 1.2rem;
     line-height: 1.5;
@@ -326,6 +327,7 @@ img {
     font-size: 1.2rem;
     line-height: 1.5;
     color: #767e7e;
+    letter-spacing: 2.4px;
 }
 
 .courses .title {
@@ -550,4 +552,91 @@ img {
 .feedback .avatar:nth-of-type(6) {
     bottom: 29px;
     left: 1060px;
+}
+
+/* ==================== creat ==================== */
+.creat {
+    padding: 76px 0px 88px 135px;
+    background: #def6f5;
+}
+.creat .detail {
+    width: 420px;
+    margin-right: 410px;
+}
+
+.creat .title {
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1.5;
+    color: #070707;
+}
+
+.creat .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #767e7e;
+}
+
+.creat .btn {
+    padding: 25px 41px;
+    background: #2ac9bf;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ==================== footer ==================== */
+
+.footer {
+    padding: 131px 0px 50px;
+}
+.footer > .row {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .title {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #2e2e2e;
+}
+
+.footer .link {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #535353;
+}
+
+.footer .link:hover,
+.footer .link-social:hover {
+    text-decoration: underline;
+}
+
+.footer .col:last-child .title {
+    margin-bottom: 18px;
+}
+
+.footer .col:last-child .brand-block {
+    margin-bottom: 18px;
+}
+.footer .col:last-child span {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #535353;
+}
+.footer .col:last-child .cir-btn {
+    width: 9px;
+    height: 9px;
+}
+
+.footer .cpr {
+    margin-top: 80px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #b0b5b4;
+    text-align: center;
 }
