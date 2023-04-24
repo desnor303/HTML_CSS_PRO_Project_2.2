@@ -111,6 +111,11 @@ img {
     border: 1px solid #1ebfc1;
     border-radius: 6px;
     padding: 12px 24px;
+    /* text */
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #1ebfc1;
 }
 
 /* ==================== hero ==================== */
