@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
 }
-
+:root {
+    /* color  zone  */
+    --primary-color: #1ebfc1;
+    --white-color: #ffffff;
+}
 html {
     font-size: 62.5%;
 }
@@ -12,14 +16,9 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 1.8rem;
+    background: #fff;
 }
-.page {
-    width: 1440px;
-    background: #ffffff;
-    max-width: calc(100vw - 48px);
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .content {
     width: 1170px;
     max-width: calc(100vw - 48px);
@@ -38,13 +37,18 @@ a {
 }
 
 .btn {
+    border: 1px var(--white-color) solid;
+    color: var(--white-color);
+    background-color: var(--primary-color);
     min-width: 186px;
     border-radius: 14px;
     padding: 20px 41px;
 }
 
 .btn:hover {
-    background: #def6f5;
+    border: 1px var(--primary-color) solid;
+    color: var(--primary-color);
+    background-color: var(--white-color);
     opacity: 0.9;
 }
 
@@ -63,13 +67,20 @@ a {
 img {
     display: block;
 }
+/* color-zone  */
+
 /* ==================== header ==================== */
 .header {
     padding-top: 52px;
-    background: #ffffff;
-    margin-bottom: 50px;
+    background: #fff;
+    padding-bottom: 10px;
 }
 
+.sticky-header {
+    position: sticky;
+    top: -42px;
+    z-index: 1;
+}
 .header .navbar {
     margin-left: 215px;
 }
@@ -79,7 +90,7 @@ img {
     font-weight: 400;
     font-size: 1.6rem;
     color: #2f3a3b;
-    padding: 12px 20px;
+    padding: 16px 20px;
 }
 
 .header .navbar .item:first-of-type {
@@ -87,8 +98,8 @@ img {
 }
 
 .header .navbar .item:hover {
-    background: #1ebfc1;
-    opacity: 0.9;
+    transition-duration: 1s;
+    background: #ccc;
 }
 
 .header .nav-sub {
@@ -106,16 +117,26 @@ img {
     color: #494949;
 }
 
+.header .nav-sub .item:nth-of-type(1):hover {
+    color: #1ebfc1;
+}
 .header .nav-sub .item:nth-child(2) {
     margin-left: 24px;
-    border: 1px solid #1ebfc1;
     border-radius: 6px;
-    padding: 12px 24px;
+    padding: 11px 24px;
     /* text */
     font-weight: 600;
     font-size: 1.6rem;
     text-align: center;
-    color: #1ebfc1;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: var(--white-color);
+}
+
+.header .nav-sub .item:nth-child(2):hover {
+    border: 1px solid var(--primary-color);
+    color: var(--white-color);
+    background: var(--primary-color);
 }
 
 /* ==================== hero ==================== */
@@ -223,7 +244,6 @@ img {
     width: 374px;
     margin-top: 46px;
     font-weight: 400;
-    font-size: 1.8rem;
     line-height: 1.78;
     color: #9da6a5;
 }
@@ -239,13 +259,10 @@ img {
     min-width: 186px;
     border-radius: 14px;
     padding: 20px 41px;
-    background: #1ebfc1;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
     font-weight: 600;
-    font-size: 1.8rem;
     line-height: 1.5;
     text-align: center;
-    color: #ffffff;
 }
 
 .hero .cir-btn img {
@@ -263,12 +280,15 @@ img {
     margin-left: 50px;
 }
 
+.hero .hero-detail .cir-btn:hover {
+    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+}
 /* ==================== features ==================== */
 .features {
+    margin-top: 130px;
     background: #ffffff;
 }
 .features .content-features {
-    margin-left: 135px;
     width: 1024px;
 }
 .features .content-features div:first-child {
@@ -284,7 +304,6 @@ img {
 .features .desc-2 {
     margin-top: 18px;
     font-weight: 400;
-    font-size: 1.8rem;
     line-height: 1.5;
     color: #767e7e;
 }
@@ -313,7 +332,6 @@ img {
 
 .features .row .desc-3 {
     margin-top: 16px;
-    margin-top: 26px;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.69;
@@ -345,7 +363,6 @@ img {
 .courses .desc-2 {
     width: 525px;
     font-weight: 400;
-    font-size: 1.8rem;
     line-height: 1.78;
     color: #767e7e;
 }
@@ -376,10 +393,16 @@ img {
     width: 100%;
     height: 393px;
     object-fit: cover;
-    opacity: 0.65;
+    opacity: var(--opacity-hover, 0.65);
     border-radius: 8px;
 }
 
+.courses .row-2 .slide:nth-of-type(1):hover,
+.courses .row-2 .slide:nth-of-type(2):hover,
+.courses .row-2 .slide:nth-of-type(3):hover {
+    --opacity-hover: 1;
+    cursor: pointer;
+}
 .courses .row-2 .panel {
     opacity: 1;
     width: 325px;
@@ -517,9 +540,12 @@ img {
     text-align: center;
     justify-content: center;
     border-radius: 50%;
-    background: #2ac9bf;
+    background-color: var(--primary-color);
 }
 
+.feedback .navbar .cir-btn:hover {
+    opacity: 0.9;
+}
 .feedback .avatar {
     width: 78px;
     height: 78px;
@@ -561,7 +587,7 @@ img {
 
 /* ==================== creat ==================== */
 .creat {
-    padding: 76px 0px 88px 135px;
+    padding: 76px 0px 135px;
     background: #def6f5;
 }
 .creat .detail {
@@ -578,17 +604,13 @@ img {
 
 .creat .desc {
     font-weight: 400;
-    font-size: 1.8rem;
     color: #767e7e;
 }
 
 .creat .btn {
     padding: 25px 41px;
-    background: #2ac9bf;
     font-weight: 600;
-    font-size: 1.8rem;
     text-align: center;
-    color: #ffffff;
 }
 
 /* ==================== footer ==================== */
@@ -604,7 +626,6 @@ img {
 .footer .title {
     margin-bottom: 25px;
     font-weight: 500;
-    font-size: 1.8rem;
     color: #2e2e2e;
 }
 
@@ -615,6 +636,11 @@ img {
     color: #535353;
 }
 
+.footer .link-social {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #535353;
+}
 .footer .link:hover,
 .footer .link-social:hover {
     text-decoration: underline;
@@ -641,7 +667,6 @@ img {
 .footer .cpr {
     margin-top: 80px;
     font-weight: 400;
-    font-size: 1.8rem;
     color: #b0b5b4;
     text-align: center;
 }
